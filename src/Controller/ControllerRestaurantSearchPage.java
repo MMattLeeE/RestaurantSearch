@@ -171,7 +171,8 @@ public class ControllerRestaurantSearchPage implements Initializable {
                 locationSearch(searchQuery);
 
                 //if there is nothing in searchArray, it means nothing is within search radius or nothing in search radius meets search query.
-                if (searchArray.size()==0) {
+
+                if (searchArray.size()==0 && searchTextField.getText().trim().equals("")) {
                     restaurantTable.setPlaceholder(new Label("No matches to search query." + "\n" + "Press SEARCH to display original list."));
                     restaurantTable.getItems().clear();
                 } else {
@@ -356,7 +357,22 @@ public class ControllerRestaurantSearchPage implements Initializable {
         //At this point the searchArray holds restaurants within the user input search radius.
         // Check if there is a search query at all;
         // if no search query, this entire function returns all restaurants within the user input search radius.
-        if ()
+        if (!searchQuery.trim().equals("")) {
+            ArrayList<Restaurant> tempArray = new ArrayList<>();
+            searchQuery = searchQuery.toLowerCase();
+            for (int i=0; i<searchArray.size(); i++) {
+                String currentName = searchArray.get(i).getRestaurantName().toLowerCase();
+                String currentAddress = searchArray.get(i).getRestaurantAddress().toLowerCase();
+                String currentLat = Double.toString(searchArray.get(i).getRestaurantLocation()[0]);
+                String currentLong = Double.toString(searchArray.get(i).getRestaurantLocation()[1]);
+                String currentPhone = searchArray.get(i).getRestaurantPhoneNumber();
+
+                if (currentName.contains(searchQuery) || currentAddress.contains(searchQuery) || orderContainString(searchQuery, currentLat) || orderContainString(searchQuery, currentLong) || currentPhone.contains(searchQuery)) { //match is found
+                    tempArray.set(i,searchArray.get(i));
+                }
+            }
+            searchArray = tempArray;
+        }
     }
 
 }
