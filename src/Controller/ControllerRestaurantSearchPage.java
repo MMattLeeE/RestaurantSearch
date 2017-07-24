@@ -37,6 +37,8 @@ public class ControllerRestaurantSearchPage implements Initializable {
     public TextField searchRadius;
     public CheckBox useLocationSearch;
     public Label locationError;
+    public Label distanceOutput;
+    public Label distance;
 
     @FXML private Label restaurantNameOutput;
     @FXML private Label restaurantAddressOutput;
@@ -52,32 +54,15 @@ public class ControllerRestaurantSearchPage implements Initializable {
     @FXML private Button LogOutBtn;
 
     @FXML private TableView<Restaurant> restaurantTable;
-    //@FXML private TableColumn<Restaurant, String> restaurantNameCol;
 
     private ArrayList<Restaurant> searchArray;
     private ArrayList<Restaurant> tempList;
     private BinarySearchTree<Restaurant> bst;
-    /**
-    private BinarySearchTree<Restaurant> bstName;
-    private BinarySearchTree<Restaurant> bstAddress;
-    private BinarySearchTree<Restaurant> bstLongitude;
-    private BinarySearchTree<Restaurant> bstPhone;
-    **/
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         bst = RestaurantDB.getRestaurantsDB();
-    /**
-        try {
-            bstName = bst.reorderBST(Restaurant.RestaurantNameComparator);
-            bstAddress = bst.reorderBST(Restaurant.RestaurantAddressComparator);
-            bstLongitude = bst.reorderBST(Restaurant.RestaurantLongitudeComparator);
-            bstPhone = bst.reorderBST(Restaurant.RestaurantPhoneComparator);
-        } catch (ListIndexOutOfBounds listIndexOutOfBounds) {
-            listIndexOutOfBounds.printStackTrace();
-        } catch (QueueUnderFlowException e) {
-            e.printStackTrace();
-        }
-    **/
+
         //Code below that populates the table with all restaurants from bst
         tempList = new ArrayList<>();
         bst.reset(BinarySearchTree.INORDER);
@@ -99,10 +84,14 @@ public class ControllerRestaurantSearchPage implements Initializable {
                 currentLat.setDisable(false);
                 currentLong.setDisable(false);
                 searchRadius.setDisable(false);
+                distance.setVisible(true);
+                distanceOutput.setVisible(true);
             } else if (!selected) {
                 currentLat.setDisable(true);
                 currentLong.setDisable(true);
                 searchRadius.setDisable(true);
+                distance.setVisible(false);
+                distanceOutput.setVisible(false);
             }
         });
         //change listener for when a restaurant is selected on list...
@@ -115,6 +104,8 @@ public class ControllerRestaurantSearchPage implements Initializable {
         //When user clicks search button
         searchBtn.setOnAction(e -> {
             searchRestaurants();
+            restaurantTable.getSelectionModel().clearSelection();
+            setRestaurantInfoVisibility(false);
         });
         //When user info button is pressed
         UserInfoBtn.setOnAction(e -> {
@@ -146,6 +137,9 @@ public class ControllerRestaurantSearchPage implements Initializable {
         Image image = new Image(currentSelected.getRestaurantImage(),583,322,true,false);
         restaurantImageView.setImage(image);
 
+        if (useLocationSearch.isSelected()){
+            distanceOutput.setText(Double.toString(currentSelected.getDistanceFromCurrentLocation()));
+        }
         //make all the restaurant information visible
         setRestaurantInfoVisibility(true);
     }
@@ -175,6 +169,8 @@ public class ControllerRestaurantSearchPage implements Initializable {
                 if (searchArray.size()==0 && searchTextField.getText().trim().equals("")) {
                     restaurantTable.setPlaceholder(new Label("No matches to search query." + "\n" + "Press SEARCH to display original list."));
                     restaurantTable.getItems().clear();
+                } else if (searchTextField.getText().trim().equals("")){
+                    restaurantTable.getItems().setAll(searchArray);
                 } else {
                     restaurantTable.getItems().setAll(searchArray);
                 }
@@ -257,6 +253,11 @@ public class ControllerRestaurantSearchPage implements Initializable {
         Lat.setVisible(isVisible);
         Long.setVisible(isVisible);
         Phone.setVisible(isVisible);
+
+        if (useLocationSearch.isSelected()){
+            distance.setVisible(isVisible);
+            distanceOutput.setVisible(isVisible);
+        }
     }
 
     public boolean isLocationInputsEmpty() {
@@ -368,7 +369,7 @@ public class ControllerRestaurantSearchPage implements Initializable {
                 String currentPhone = searchArray.get(i).getRestaurantPhoneNumber();
 
                 if (currentName.contains(searchQuery) || currentAddress.contains(searchQuery) || orderContainString(searchQuery, currentLat) || orderContainString(searchQuery, currentLong) || currentPhone.contains(searchQuery)) { //match is found
-                    tempArray.set(i,searchArray.get(i));
+                    tempArray.add(searchArray.get(i));
                 }
             }
             searchArray = tempArray;
