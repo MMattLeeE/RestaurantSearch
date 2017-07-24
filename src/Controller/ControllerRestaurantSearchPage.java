@@ -295,18 +295,30 @@ public class ControllerRestaurantSearchPage implements Initializable {
     }
 
     public void locationSearch(String searchQuery) {
+        //store all the current location and search radius inputs:
         double cLatitude = Double.parseDouble(currentLat.getText());
         double cLongitude = Double.parseDouble(currentLong.getText());
         double cRadius = Double.parseDouble(searchRadius.getText());
 
+        //create a minHeap:
         minHeap<Restaurant> locationHeap = new minHeap(bst.size());
 
+        //reorder BST
         bst.reset(BinarySearchTree.INORDER);
 
+        // go through the entire restaurant BST and set the distanceFromCurrentLocation fields
+        // of each restaurant-object relative to the user-input current location
+        // then enqueue them into the minHeap:
         for (int i=0; i<bst.size(); i++) {
             try {
+                //get the restaurant from the BST:
                 Restaurant cRestaurant = bst.getNext(BinarySearchTree.INORDER);
-                cRestaurant.setDistanceFromCurrentLocation(HaversineDistance.distance(cLatitude, cLongitude, cRestaurant.getRestaurantLocation()[0], cRestaurant.getRestaurantLocation()[1]));
+                //use set method from restaurant:
+                cRestaurant.setDistanceFromCurrentLocation(
+                        //inline use haversine to get the distance in miles:
+                        HaversineDistance.distance(cLatitude, cLongitude, cRestaurant.getRestaurantLocation()[0], cRestaurant.getRestaurantLocation()[1])
+                );
+                //place the restaurant in the minHeap:
                 locationHeap.enqueue(cRestaurant);
             } catch (QueueUnderFlowException e) {
                 e.printStackTrace();
@@ -319,14 +331,19 @@ public class ControllerRestaurantSearchPage implements Initializable {
         boolean isFound = false;
         int counter = 0;
 
+        // Dequeue each restaurant from the minHeap until a restaurant outside the search radius is dequeue:
         while(!isFound || counter!=bst.size()) {
             Restaurant output;
 
             try {
+                //dequeue a restaurant:
                 output = locationHeap.dequeue();
+                //dequeue restaurant is within search radius:
                 if (output.getDistanceFromCurrentLocation()<=cRadius){
+                    //add to the searchArray
                     searchArray.add(output);
                 } else if (output.getDistanceFromCurrentLocation()>cRadius){
+                    //end the while loop if a restaurant is outside search radius
                     isFound=true;
                 }
             } catch (PriorityQueueUnderflowException e) {
@@ -336,9 +353,10 @@ public class ControllerRestaurantSearchPage implements Initializable {
             counter++;
         }
 
-        for (int i=0; i<searchArray.size(); i++) {
-            Boolean hello;
-        }
+        //At this point the searchArray holds restaurants within the user input search radius.
+        // Check if there is a search query at all;
+        // if no search query, this entire function returns all restaurants within the user input search radius.
+        if ()
     }
 
 }

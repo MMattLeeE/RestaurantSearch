@@ -20,6 +20,15 @@ public class minHeapTest {
         testMinHeap.enqueue("e");
 
         System.out.println(testMinHeap.toString());
+
+        System.out.println(testMinHeap.dequeue().toString());
+        System.out.println(testMinHeap.toString());
+
+        System.out.println(testMinHeap.dequeue().toString());
+        System.out.println(testMinHeap.toString());
+
+        System.out.println(testMinHeap.dequeue().toString());
+        System.out.println(testMinHeap.toString());
     }
 
 }

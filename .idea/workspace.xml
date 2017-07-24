@@ -13,11 +13,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="minHeap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="minHeap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/minHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1134">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="251">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="method#toString#0;class#minHeap#0" expanded="false" />
               </folding>
@@ -28,9 +28,25 @@
       <file leaf-file-name="minHeapTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tests/minHeapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="567">
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerRestaurantSearchPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ControllerRestaurantSearchPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="353" column="9" lean-forward="true" selection-start-line="353" selection-start-column="9" selection-end-line="353" selection-end-column="9" />
+              <folding>
+                <element signature="method#displayRestaurantData#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
+                <element signature="method#orderContainString#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
+                <element signature="method#setRestaurantInfoVisibility#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
+                <element signature="method#isLocationInputsEmpty#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
+                <element signature="method#isValidLocationInputs#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,9 +92,9 @@
         <option value="$PROJECT_DIR$/src/Model/UserModel/UserDB.java" />
         <option value="$PROJECT_DIR$/src/View/Main.java" />
         <option value="$PROJECT_DIR$/src/View/restaurantSearchPage.fxml" />
-        <option value="$PROJECT_DIR$/src/Controller/ControllerRestaurantSearchPage.java" />
-        <option value="$PROJECT_DIR$/src/Model/DataStructures/minHeap.java" />
         <option value="$PROJECT_DIR$/src/Tests/minHeapTest.java" />
+        <option value="$PROJECT_DIR$/src/Model/DataStructures/minHeap.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ControllerRestaurantSearchPage.java" />
       </list>
     </option>
   </component>
@@ -234,6 +250,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DataStructures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantSearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantSearch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -765,23 +799,11 @@
       <workItem from="1500347345847" duration="35410000" />
       <workItem from="1500505891244" duration="645000" />
       <workItem from="1500782061599" duration="722000" />
-      <workItem from="1500842794165" duration="7238000" />
+      <workItem from="1500842794165" duration="14664000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HaversineDistanceTest_distanceTest - 2017.07.18 at 19h 57m 47s.xml">
-      <configuration name="HaversineDistanceTest.distanceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HaversineDistanceTest_distanceTest - 2017.07.18 at 20h 04m 37s.xml">
-      <configuration name="HaversineDistanceTest.distanceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HaversineDistanceTest_distanceTest - 2017.07.18 at 20h 05m 33s.xml">
-      <configuration name="HaversineDistanceTest.distanceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HaversineDistanceTest_distanceTest - 2017.07.18 at 20h 07m 16s.xml">
-      <configuration name="HaversineDistanceTest.distanceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HaversineDistanceTest_distanceTest - 2017.07.18 at 20h 08m 15s.xml">
       <configuration name="HaversineDistanceTest.distanceTest" configurationId="JUnit" />
     </history-entry>
@@ -800,9 +822,21 @@
     <history-entry file="minHeapTest_enqueue - 2017.07.23 at 18h 35m 27s.xml">
       <configuration name="minHeapTest.enqueue" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="minHeapTest_enqueue - 2017.07.24 at 04h 33m 39s.xml">
+      <configuration name="minHeapTest.enqueue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="minHeapTest_enqueue - 2017.07.24 at 04h 50m 09s.xml">
+      <configuration name="minHeapTest.enqueue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="minHeapTest_enqueue - 2017.07.24 at 04h 50m 40s.xml">
+      <configuration name="minHeapTest.enqueue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="minHeapTest_enqueue - 2017.07.24 at 04h 50m 56s.xml">
+      <configuration name="minHeapTest.enqueue" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46264000" />
+    <option name="totallyTimeSpent" value="53690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -818,13 +852,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32646048" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12445887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15530303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -934,6 +968,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,13 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/RestaurantModel/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="123" column="53" lean-forward="false" selection-start-line="123" selection-start-column="53" selection-end-line="123" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/RestaurantModel/RestaurantDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1093,13 +1121,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="13" column="89" lean-forward="false" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ControllerRestaurantSearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="343" column="1" lean-forward="false" selection-start-line="343" selection-start-column="1" selection-end-line="343" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,18 +1141,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/minHeapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="567">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/RestaurantModel/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="123" column="65" lean-forward="true" selection-start-line="123" selection-start-column="65" selection-end-line="123" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/minHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="251">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="method#toString#0;class#minHeap#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ControllerRestaurantSearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="353" column="9" lean-forward="true" selection-start-line="353" selection-start-column="9" selection-end-line="353" selection-end-column="9" />
+          <folding>
+            <element signature="method#displayRestaurantData#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
+            <element signature="method#orderContainString#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
+            <element signature="method#setRestaurantInfoVisibility#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
+            <element signature="method#isLocationInputsEmpty#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
+            <element signature="method#isValidLocationInputs#0;class#ControllerRestaurantSearchPage#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -11,7 +11,7 @@ public class minHeap<E extends Comparable<E>> implements IPriorityQueue<E> {
     private int maxIndex;
 
     public minHeap(int maxSize) {
-        elementsArray = new ArrayList<>(maxSize);
+        elementsArray = new ArrayList<>(maxSize + 1);
         lastIndex = -1;
         maxIndex = maxSize-1;
     }
@@ -86,7 +86,7 @@ public class minHeap<E extends Comparable<E>> implements IPriorityQueue<E> {
         else
         if (left == lastIndex)
             // hole has left child only
-            if (element.compareTo(elementsArray.get(left)) < 0)
+            if (element.compareTo(elementsArray.get(left)) > 0)
                 // element < left child
                 return left;
             else
@@ -94,9 +94,9 @@ public class minHeap<E extends Comparable<E>> implements IPriorityQueue<E> {
                 return hole;
         else
             // hole has two children
-            if (elementsArray.get(left).compareTo(elementsArray.get(right)) < 0)
+            if (elementsArray.get(left).compareTo(elementsArray.get(right)) > 0)
                 // left child < right child
-                if (elementsArray.get(right).compareTo(element) <= 0)
+                if (elementsArray.get(right).compareTo(element) >= 0)
                     // right child <= element
                     return hole;
                 else
@@ -104,7 +104,7 @@ public class minHeap<E extends Comparable<E>> implements IPriorityQueue<E> {
                     return right;
             else
                 // left child >= right child
-                if (elementsArray.get(left).compareTo(element) <= 0)
+                if (elementsArray.get(left).compareTo(element) >= 0)
                     // left child <= element
                     return hole;
                 else
