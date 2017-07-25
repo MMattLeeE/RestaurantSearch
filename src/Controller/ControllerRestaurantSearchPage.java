@@ -84,14 +84,14 @@ public class ControllerRestaurantSearchPage implements Initializable {
                 currentLat.setDisable(false);
                 currentLong.setDisable(false);
                 searchRadius.setDisable(false);
-                distance.setVisible(true);
-                distanceOutput.setVisible(true);
+                restaurantTable.getSelectionModel().clearSelection();
             } else if (!selected) {
                 currentLat.setDisable(true);
                 currentLong.setDisable(true);
                 searchRadius.setDisable(true);
                 distance.setVisible(false);
                 distanceOutput.setVisible(false);
+                restaurantTable.getSelectionModel().clearSelection();
             }
         });
         //change listener for when a restaurant is selected on list...

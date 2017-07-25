@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="775.0" prefWidth="1089.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerRestaurantSearchPage">
+<AnchorPane prefHeight="775.0" prefWidth="1089.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerRestaurantSearchPage">
    <children>
 
       <Button fx:id="UserInfoBtn" layoutX="903.0" layoutY="723.0" mnemonicParsing="false" text="User Info" />
