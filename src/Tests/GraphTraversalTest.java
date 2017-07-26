@@ -5,6 +5,8 @@ import Model.DataStructures.WeightedGraph;
 import Model.RestaurantModel.Restaurant;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 /**
@@ -31,7 +33,7 @@ public class GraphTraversalTest {
         testWeightGraph.addVertex(testRestaurant7);
     }
     public void createEdges() throws Exception{
-        testWeightGraph.addEdge(testRestaurant1,testRestaurant2,100);
+        testWeightGraph.addEdge(testRestaurant1,testRestaurant2,1000);
         testWeightGraph.addEdge(testRestaurant1,testRestaurant3,100);
         testWeightGraph.addEdge(testRestaurant1,testRestaurant5,100);
         testWeightGraph.addEdge(testRestaurant1,testRestaurant6,100);
@@ -50,10 +52,32 @@ public class GraphTraversalTest {
     public void shortestPathsTest() throws Exception {
         addTestRestaurants();
         createEdges();
+        ArrayList<ArrayList<Restaurant>> output1;
+        ArrayList<ArrayList<Restaurant>> output2;
 
-        GraphTraversal.shortestPaths(testWeightGraph,testRestaurant5);
-        GraphTraversal.shortestPaths(testWeightGraph,testRestaurant1);
+        output1 = GraphTraversal.shortestPaths(testWeightGraph,testRestaurant5);
+        System.out.println(output1.size());
+        System.out.println("PATHS TAKEN:");
+        for (int i=0;i<output1.size(); i++) {
+            String outputString = "";
+            for (int j=0; j<output1.get(i).size(); j++) {
+                outputString +=output1.get(i).get(j).toString()+ " => ";
+            }
+            outputString+= "\n";
+            System.out.println(outputString);
+        }
 
+        output2 = GraphTraversal.shortestPaths(testWeightGraph,testRestaurant1);
+        System.out.println(output2.size());
+        System.out.println("PATHS TAKEN:");
+        for (int i=0;i<output2.size(); i++) {
+            String outputString = "";
+            for (int j=0; j<output2.get(i).size(); j++) {
+                outputString +=output2.get(i).get(j).toString()+ " => ";
+            }
+            outputString+= "\n";
+            System.out.println(outputString);
+        }
     }
 
 }
