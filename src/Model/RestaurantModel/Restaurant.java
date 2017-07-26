@@ -1,12 +1,14 @@
 package Model.RestaurantModel;
 
+import Model.DataStructures.ICustomCompare;
+
 import java.io.Serializable;
 import java.util.Comparator;
 
 /**
  * Created by Matt on 6/25/2017.
  */
-public class Restaurant implements Serializable, Comparable<Restaurant> {
+public class Restaurant implements Serializable, Comparable<Restaurant>, ICustomCompare<Restaurant> {
     private String restaurantName;
     private String restaurantAddress;
     private double[] restaurantLocation;
@@ -14,8 +16,13 @@ public class Restaurant implements Serializable, Comparable<Restaurant> {
     private String restaurantImage;
     private double distanceFromCurrentLocation;
 
-    public Restaurant() {
-
+    public Restaurant(){}
+    public Restaurant(String name) {
+        setRestaurantName(name);
+        setRestaurantAddress("1234 test Road");
+        setRestaurantLocation(new double[]{123,123});
+        setRestaurantPhoneNumber("1231231234");
+        setRestaurantImage("");
     }
     public Restaurant(String name, String address, double[] location, String number, String image) {
         setRestaurantName(name);
@@ -54,8 +61,9 @@ public class Restaurant implements Serializable, Comparable<Restaurant> {
     public void setRestaurantImage(String restaurantImage) {
         this.restaurantImage = restaurantImage;
     }
+
     public String toString() {
-        return " " + restaurantName + " " + restaurantAddress + " " + restaurantLocation[0] + ", " + restaurantLocation[1] + " " + restaurantPhoneNumber + " " + restaurantImage;
+        return restaurantName;
     }
 
     //determine how restaurants are sorted on bst. Currently by Latitude.
@@ -123,6 +131,21 @@ public class Restaurant implements Serializable, Comparable<Restaurant> {
 
     public void setDistanceFromCurrentLocation(double distanceFromCurrentLocation) {
         this.distanceFromCurrentLocation = distanceFromCurrentLocation;
+    }
+
+    //created a custom compareTo interface called ICustomCompare
+    //has a method compareBy:
+    //just compares two restaurants by name.
+    @Override
+    public int compareBy(Restaurant o) {
+        return this.restaurantName.compareToIgnoreCase(o.getRestaurantName());
+    }
+
+    //created a custom compareTo interface called ICustomCompare
+    //The single function in the interface has an additional argument to allow comparison by different conditions.
+    @Override
+    public int compareBy(Restaurant o, String type) {
+        return this.restaurantName.compareToIgnoreCase(o.getRestaurantName());
     }
 }
 
