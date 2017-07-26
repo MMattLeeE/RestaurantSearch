@@ -27,24 +27,33 @@ public class GraphTraversal {
         System.out.println("----------------------------------------");
 
         do {
-            trip = pq.dequeue();
-            if (!graph.isVisited(trip.getToVertex())) {
-                graph.visitVertex(trip.getToVertex());
-                System.out.println(trip.toString());
-                trip.setFromVertex(trip.getToVertex());
-                minDistance = trip.getDistance();
-                edgeArray = graph.getEdgesOf(trip.getFromVertex());
+            trip = pq.dequeue();//dequeue the shortest distance traveled trip
+
+            if (!graph.isVisited(trip.getToVertex())) {//if the vertex that the current trip is going to has not been visited:
+                graph.visitVertex(trip.getToVertex());//mark the vertex we are going to as visited
+
+                System.out.println(trip.toString());//print out the trip details as it will be the shortest path to the vertex;
+                
+                trip.setFromVertex(trip.getToVertex());//where we are going to is now where we came from for the trip
+                minDistance = trip.getDistance();//store the traveled distance
+                edgeArray = graph.getEdgesOf(trip.getFromVertex()); //get the edges of the vertex we are going to
+
                 for (int i=0; i<edgeArray.size();i++) {
-                    vertex = edgeArray.get(i).getDestinationVertex();
-                    if (!graph.isVisited(vertex)) {
-                        newDistance = minDistance + graph.weightIs(trip.getFromVertex(), vertex);
-                        saveTrip = new RestaurantTrip(trip.getFromVertex(), vertex, newDistance);
-                        pq.enqueue(saveTrip);
+
+                    vertex = edgeArray.get(i).getDestinationVertex(); //iterate through each of the edges and set the vertex of where we are going
+
+                    if (!graph.isVisited(vertex)) {//if the edge doesn't lead to a vertex that is already visited:
+                        newDistance = minDistance + graph.weightIs(trip.getFromVertex(), vertex);//add the distance to travel to vertex
+                        saveTrip = new RestaurantTrip(trip.getFromVertex(), vertex, newDistance);//put all the information into a new trip
+                        pq.enqueue(saveTrip);//enqueue the trip
+                        //the priority queue ensures that the shortest distance traveled comes out first
+                        // and all following longer trips to the same vertex get dequeued.
                     }
                 }
             }
         } while (!pq.isEmpty());
 
+        //to find any vertexes not reachable, print out everything marked not visited.
         System.out.println();
         System.out.println("The unreachable Vertices:");
         for (int i=0; i<graph.getNotVisited().size(); i++) {

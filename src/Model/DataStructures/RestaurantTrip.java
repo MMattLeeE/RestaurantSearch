@@ -17,6 +17,7 @@ public class RestaurantTrip implements Comparable<RestaurantTrip>{
         this.fromVertex = fromVertex;
         this.toVertex = toVertex;
         this.distance = distance;
+        visitedVertexes = new ArrayList<>();
     }
 
     public String toString() {
