@@ -141,11 +141,9 @@ public class WeightedGraph<E extends ICustomCompare<E>> implements IWeightedGrap
     public void visitVertex(E restaurant) {
         vertexes.get(findVertexIndex(restaurant)).setVisited(true);
     }
-
     public boolean isVisited(E restaurant) {
         return vertexes.get(findVertexIndex(restaurant)).isVisited();
     }
-
     public ArrayList<E> getNotVisited() {
         ArrayList<E> notVisitedArray = new ArrayList<>();
         for (int i=0; i<vertexes.size(); i++) {
@@ -154,5 +152,9 @@ public class WeightedGraph<E extends ICustomCompare<E>> implements IWeightedGrap
             }
         }
         return notVisitedArray;
+    }
+
+    public ArrayList<EdgeNode<E>> getEdgesOf(E vertex) {
+        return vertexes.get(findVertexIndex(vertex)).getEdges();
     }
 }

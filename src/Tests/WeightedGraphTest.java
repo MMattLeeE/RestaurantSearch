@@ -134,4 +134,22 @@ public class WeightedGraphTest {
         testWeightGraph.clearVisited();
         testWeightGraph.showGraph();
     }
+
+    @Test
+    public void getEdgesOfTest() throws Exception{
+        addTestRestaurants();
+        createEdges();
+        testWeightGraph.showGraph();
+        for (int i=0;i<testWeightGraph.getEdgesOf(testRestaurant1).size(); i++) {
+            System.out.println(testWeightGraph.getEdgesOf(testRestaurant1).get(i).getDestinationVertex().getRestaurantName());
+        }
+    }
+
+    @Test
+    public void getGraphSizeTest() throws Exception{
+        addTestRestaurants();
+        createEdges();
+
+        assertEquals(true,testWeightGraph.getGraphSize()==7);
+    }
 }

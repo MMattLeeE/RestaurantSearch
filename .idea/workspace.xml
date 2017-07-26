@@ -21,8 +21,8 @@
       <file leaf-file-name="WeightedGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/WeightedGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="110" column="28" lean-forward="false" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+            <state relative-caret-position="301">
+              <caret line="145" column="5" lean-forward="false" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
               <folding>
                 <element signature="docComment;class#WeightedGraph#0" expanded="false" />
                 <element signature="method#addVertex#0;class#WeightedGraph#0" expanded="false" />
@@ -36,7 +36,6 @@
                 <element signature="method#showGraph#0;class#WeightedGraph#0" expanded="false" />
                 <element signature="method#clearTraveled#0;class#WeightedGraph#0" expanded="false" />
                 <element signature="method#clearVisited#0;class#WeightedGraph#0" expanded="false" />
-                <element signature="method#getNotVisited#0;class#WeightedGraph#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -45,7 +44,7 @@
       <file leaf-file-name="GraphNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/GraphNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
+            <state relative-caret-position="952">
               <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,8 +64,8 @@
       <file leaf-file-name="EdgeNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/EdgeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="-21">
+              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
               <folding>
                 <element signature="e#1011#1012#0" expanded="true" />
                 <element signature="e#1042#1043#0" expanded="true" />
@@ -80,11 +79,10 @@
       <file leaf-file-name="WeightedGraphTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tests/WeightedGraphTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-476">
-              <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+            <state relative-caret-position="70">
+              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#addTestRestaurants#0;class#WeightedGraphTest#0" expanded="false" />
                 <element signature="method#isEmpty#0;class#WeightedGraphTest#0" expanded="false" />
                 <element signature="method#addVertex#0;class#WeightedGraphTest#0" expanded="false" />
                 <element signature="method#getVertexByIndex#0;class#WeightedGraphTest#0" expanded="false" />
@@ -92,6 +90,21 @@
                 <element signature="method#hasVertex#0;class#WeightedGraphTest#0" expanded="false" />
                 <element signature="method#addEdge#0;class#WeightedGraphTest#0" expanded="false" />
                 <element signature="method#weightIs#0;class#WeightedGraphTest#0" expanded="false" />
+                <element signature="method#visitedTests#0;class#WeightedGraphTest#0" expanded="false" />
+                <element signature="method#getEdgesOfTest#0;class#WeightedGraphTest#0" expanded="false" />
+                <element signature="method#getGraphSizeTest#0;class#WeightedGraphTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="minHeap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/minHeap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="method#toString#0;class#minHeap#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -100,21 +113,66 @@
       <file leaf-file-name="GraphTraversal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/GraphTraversal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="294">
+              <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="minHeap.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/minHeap.java">
+      <file leaf-file-name="GraphTraversalTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tests/GraphTraversalTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding>
+                <element signature="method#addTestRestaurants#0;class#GraphTraversalTest#0" expanded="false" />
+                <element signature="method#createEdges#0;class#GraphTraversalTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurantTrip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/RestaurantTrip.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <caret line="22" column="71" lean-forward="false" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
               <folding>
-                <element signature="method#toString#0;class#minHeap#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#934#935#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1012#1013#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1307#1308#0" expanded="true" />
+                <element signature="e#1364#1365#0" expanded="true" />
+                <element signature="e#1402#1403#0" expanded="true" />
+                <element signature="e#1479#1480#0" expanded="true" />
+                <element signature="e#1533#1534#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HaversineDistance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/HaversineDistance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,8 +182,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -154,7 +212,6 @@
         <option value="$PROJECT_DIR$/src/Model/UserModel/Person.java" />
         <option value="$PROJECT_DIR$/src/Model/RestaurantModel/RestaurantExcelReader.java" />
         <option value="$PROJECT_DIR$/src/Model/DataStructures/Heap.java" />
-        <option value="$PROJECT_DIR$/src/Model/HaversineDistance.java" />
         <option value="$PROJECT_DIR$/src/Tests/HaversineDistanceTest.java" />
         <option value="$PROJECT_DIR$/src/Model/UserModel/UserDB.java" />
         <option value="$PROJECT_DIR$/src/View/Main.java" />
@@ -170,10 +227,15 @@
         <option value="$PROJECT_DIR$/src/Model/DataStructures/IWeightedGraph.java" />
         <option value="$PROJECT_DIR$/src/Model/DataStructures/EdgeNode.java" />
         <option value="$PROJECT_DIR$/src/Model/DataStructures/GraphNode.java" />
-        <option value="$PROJECT_DIR$/src/Model/DataStructures/WeightedGraph.java" />
-        <option value="$PROJECT_DIR$/src/Model/DataStructures/GraphTraversal.java" />
-        <option value="$PROJECT_DIR$/src/Tests/WeightedGraphTest.java" />
         <option value="$PROJECT_DIR$/src/Model/DataStructures/minHeap.java" />
+        <option value="$PROJECT_DIR$/src/Model/DataStructures/Journey.java" />
+        <option value="$PROJECT_DIR$/src/Tests/RestaurantTripTest.java" />
+        <option value="$PROJECT_DIR$/src/Model/HaversineDistance.java" />
+        <option value="$PROJECT_DIR$/src/Tests/WeightedGraphTest.java" />
+        <option value="$PROJECT_DIR$/src/Model/DataStructures/WeightedGraph.java" />
+        <option value="$PROJECT_DIR$/src/Tests/GraphTraversalTest.java" />
+        <option value="$PROJECT_DIR$/src/Model/DataStructures/GraphTraversal.java" />
+        <option value="$PROJECT_DIR$/src/Model/DataStructures/RestaurantTrip.java" />
       </list>
     </option>
   </component>
@@ -370,111 +432,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WeightedGraphTest.visitedTests">
-    <configuration default="false" name="WeightedGraphTest.addEdge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RestaurantLocationSearch" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WeightedGraphTest" />
-      <option name="METHOD_NAME" value="addEdge" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="WeightedGraphTest.getVertexByIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RestaurantLocationSearch" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WeightedGraphTest" />
-      <option name="METHOD_NAME" value="getVertexByIndex" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="WeightedGraphTest.findVertexIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RestaurantLocationSearch" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WeightedGraphTest" />
-      <option name="METHOD_NAME" value="findVertexIndex" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="WeightedGraphTest.clearTraveledTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RestaurantLocationSearch" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WeightedGraphTest" />
-      <option name="METHOD_NAME" value="clearTraveledTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.GraphTraversalTest.shortestPathsTest">
     <configuration default="false" name="WeightedGraphTest.visitedTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -488,6 +446,110 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.WeightedGraphTest" />
       <option name="METHOD_NAME" value="visitedTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="WeightedGraphTest.getEdgesOfTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RestaurantLocationSearch" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WeightedGraphTest" />
+      <option name="METHOD_NAME" value="getEdgesOfTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RestaurantTripTest.compareToTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RestaurantLocationSearch" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.RestaurantTripTest" />
+      <option name="METHOD_NAME" value="compareToTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="WeightedGraphTest.getGraphSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RestaurantLocationSearch" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WeightedGraphTest" />
+      <option name="METHOD_NAME" value="getGraphSizeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GraphTraversalTest.shortestPathsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RestaurantLocationSearch" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.GraphTraversalTest" />
+      <option name="METHOD_NAME" value="shortestPathsTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -889,19 +951,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.addEdge" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.getVertexByIndex" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.findVertexIndex" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.clearTraveledTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.visitedTests" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.visitedTests" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.getEdgesOfTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RestaurantTripTest.compareToTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.getGraphSizeTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GraphTraversalTest.shortestPathsTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.visitedTests" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.addEdge" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.clearTraveledTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.findVertexIndex" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.getVertexByIndex" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GraphTraversalTest.shortestPathsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.getGraphSizeTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RestaurantTripTest.compareToTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.getEdgesOfTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.WeightedGraphTest.visitedTests" />
       </list>
     </recent_temporary>
   </component>
@@ -919,34 +981,34 @@
       <workItem from="1500347345847" duration="35410000" />
       <workItem from="1500505891244" duration="645000" />
       <workItem from="1500782061599" duration="722000" />
-      <workItem from="1500842794165" duration="57476000" />
+      <workItem from="1500842794165" duration="64736000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WeightedGraphTest_addEdge - 2017.07.26 at 02h 37m 13s.xml">
-      <configuration name="WeightedGraphTest.addEdge" configurationId="JUnit" />
+    <history-entry file="GraphTraversalTest_shortestPathsTest - 2017.07.26 at 05h 50m 29s.xml">
+      <configuration name="GraphTraversalTest.shortestPathsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeightedGraphTest_addEdge - 2017.07.26 at 02h 37m 38s.xml">
-      <configuration name="WeightedGraphTest.addEdge" configurationId="JUnit" />
+    <history-entry file="GraphTraversalTest_shortestPathsTest - 2017.07.26 at 05h 52m 35s.xml">
+      <configuration name="GraphTraversalTest.shortestPathsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeightedGraphTest_clearTraveledTest - 2017.07.26 at 02h 37m 07s.xml">
-      <configuration name="WeightedGraphTest.clearTraveledTest" configurationId="JUnit" />
+    <history-entry file="GraphTraversalTest_shortestPathsTest - 2017.07.26 at 05h 53m 02s.xml">
+      <configuration name="GraphTraversalTest.shortestPathsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeightedGraphTest_visitedTests - 2017.07.26 at 02h 59m 27s.xml">
-      <configuration name="WeightedGraphTest.visitedTests" configurationId="JUnit" />
+    <history-entry file="RestaurantTripTest_compareToTest - 2017.07.26 at 05h 03m 41s.xml">
+      <configuration name="RestaurantTripTest.compareToTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeightedGraphTest_visitedTests - 2017.07.26 at 03h 01m 22s.xml">
-      <configuration name="WeightedGraphTest.visitedTests" configurationId="JUnit" />
+    <history-entry file="RestaurantTripTest_compareToTest - 2017.07.26 at 05h 04m 04s.xml">
+      <configuration name="RestaurantTripTest.compareToTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeightedGraphTest_visitedTests - 2017.07.26 at 03h 02m 52s.xml">
-      <configuration name="WeightedGraphTest.visitedTests" configurationId="JUnit" />
+    <history-entry file="WeightedGraphTest_getEdgesOfTest - 2017.07.26 at 04h 31m 03s.xml">
+      <configuration name="WeightedGraphTest.getEdgesOfTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeightedGraphTest_visitedTests - 2017.07.26 at 03h 03m 02s.xml">
-      <configuration name="WeightedGraphTest.visitedTests" configurationId="JUnit" />
+    <history-entry file="WeightedGraphTest_getEdgesOfTest - 2017.07.26 at 04h 31m 20s.xml">
+      <configuration name="WeightedGraphTest.getEdgesOfTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeightedGraphTest_visitedTests - 2017.07.26 at 03h 06m 42s.xml">
-      <configuration name="WeightedGraphTest.visitedTests" configurationId="JUnit" />
+    <history-entry file="WeightedGraphTest_getGraphSizeTest - 2017.07.26 at 05h 28m 01s.xml">
+      <configuration name="WeightedGraphTest.getGraphSizeTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WeightedGraphTest_visitedTests - 2017.07.26 at 03h 07m 46s.xml">
       <configuration name="WeightedGraphTest.visitedTests" configurationId="JUnit" />
@@ -956,7 +1018,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96502000" />
+    <option name="totallyTimeSpent" value="103762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1002,7 +1064,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1011,27 +1073,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/ControllerRestaurantSearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/HaversineDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/minHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2352">
-          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1218,13 +1259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/HaversineDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/minHeapTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -1337,19 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/RestaurantModel/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1498">
-          <caret line="140" column="78" lean-forward="true" selection-start-line="140" selection-start-column="78" selection-end-line="140" selection-end-column="78" />
-          <folding>
-            <element signature="e#2165#2166#0" expanded="true" />
-            <element signature="e#2202#2203#0" expanded="true" />
-            <element signature="e#5421#5422#0" expanded="true" />
-            <element signature="e#5506#5507#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -1390,10 +1411,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/EdgeNode.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/RestaurantModel/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2415">
+          <caret line="140" column="78" lean-forward="true" selection-start-line="140" selection-start-column="78" selection-end-line="140" selection-end-column="78" />
+          <folding>
+            <element signature="e#5421#5422#0" expanded="true" />
+            <element signature="e#5506#5507#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/RestaurantTripTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/HaversineDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/minHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="method#toString#0;class#minHeap#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/EdgeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
             <element signature="e#1011#1012#0" expanded="true" />
             <element signature="e#1042#1043#0" expanded="true" />
@@ -1403,9 +1461,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/WeightedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="145" column="5" lean-forward="false" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#addVertex#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#getVertexByIndex#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#findVertexIndex#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="docComment;method#hasVertex#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#hasVertex#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#addEdge#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#weightIs#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#toString#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#showGraph#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#clearTraveled#0;class#WeightedGraph#0" expanded="false" />
+            <element signature="method#clearVisited#0;class#WeightedGraph#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/WeightedGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isEmpty#0;class#WeightedGraphTest#0" expanded="false" />
+            <element signature="method#addVertex#0;class#WeightedGraphTest#0" expanded="false" />
+            <element signature="method#getVertexByIndex#0;class#WeightedGraphTest#0" expanded="false" />
+            <element signature="method#findVertexIndex#0;class#WeightedGraphTest#0" expanded="false" />
+            <element signature="method#hasVertex#0;class#WeightedGraphTest#0" expanded="false" />
+            <element signature="method#addEdge#0;class#WeightedGraphTest#0" expanded="false" />
+            <element signature="method#weightIs#0;class#WeightedGraphTest#0" expanded="false" />
+            <element signature="method#visitedTests#0;class#WeightedGraphTest#0" expanded="false" />
+            <element signature="method#getEdgesOfTest#0;class#WeightedGraphTest#0" expanded="false" />
+            <element signature="method#getGraphSizeTest#0;class#WeightedGraphTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/GraphNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
+        <state relative-caret-position="952">
           <caret line="95" column="23" lean-forward="true" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1421,60 +1520,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/WeightedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="110" column="28" lean-forward="false" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
-          <folding>
-            <element signature="docComment;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#addVertex#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#getVertexByIndex#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#findVertexIndex#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="docComment;method#hasVertex#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#hasVertex#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#addEdge#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#weightIs#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#toString#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#showGraph#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#clearTraveled#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#clearVisited#0;class#WeightedGraph#0" expanded="false" />
-            <element signature="method#getNotVisited#0;class#WeightedGraph#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/WeightedGraphTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="38" column="63" lean-forward="false" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addTestRestaurants#0;class#WeightedGraphTest#0" expanded="false" />
-            <element signature="method#isEmpty#0;class#WeightedGraphTest#0" expanded="false" />
-            <element signature="method#addVertex#0;class#WeightedGraphTest#0" expanded="false" />
-            <element signature="method#getVertexByIndex#0;class#WeightedGraphTest#0" expanded="false" />
-            <element signature="method#findVertexIndex#0;class#WeightedGraphTest#0" expanded="false" />
-            <element signature="method#hasVertex#0;class#WeightedGraphTest#0" expanded="false" />
-            <element signature="method#addEdge#0;class#WeightedGraphTest#0" expanded="false" />
-            <element signature="method#weightIs#0;class#WeightedGraphTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/GraphTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="294">
+          <caret line="32" column="52" lean-forward="false" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/minHeap.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/DataStructures/RestaurantTrip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <caret line="22" column="71" lean-forward="false" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
           <folding>
-            <element signature="method#toString#0;class#minHeap#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/GraphTraversalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="method#addTestRestaurants#0;class#GraphTraversalTest#0" expanded="false" />
+            <element signature="method#createEdges#0;class#GraphTraversalTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

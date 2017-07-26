@@ -1,5 +1,7 @@
 package Model;
 
+import Model.RestaurantModel.Restaurant;
+
 /**
  * Created by Matt on 7/18/2017.
  */
@@ -20,5 +22,9 @@ public class HaversineDistance {
         Double distance = R * c;
 
         return distance;
+    }
+
+    public static double distanceBetween(Restaurant one, Restaurant two) {
+        return distance(one.getRestaurantLocation()[0],one.getRestaurantLocation()[1],two.getRestaurantLocation()[0],two.getRestaurantLocation()[1]);
     }
 }
