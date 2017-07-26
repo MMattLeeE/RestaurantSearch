@@ -52,6 +52,7 @@ public class GraphTraversalTest {
         createEdges();
 
         GraphTraversal.shortestPaths(testWeightGraph,testRestaurant5);
+        GraphTraversal.shortestPaths(testWeightGraph,testRestaurant1);
 
     }
 
