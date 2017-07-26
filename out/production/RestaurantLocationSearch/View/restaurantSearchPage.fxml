@@ -18,7 +18,7 @@
 
       <TableView fx:id="restaurantTable" layoutX="17.0" layoutY="52.0" prefHeight="713.0" prefWidth="300.0">
         <columns>
-          <TableColumn fx:id="restaurantNameCol" prefWidth="300.0" text="Restaurant List">
+          <TableColumn prefWidth="300.0" text="Restaurant List">
              <cellValueFactory>
                 <PropertyValueFactory property="restaurantName" />
              </cellValueFactory>
