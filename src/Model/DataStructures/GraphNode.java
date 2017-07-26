@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class GraphNode<E extends ICustomCompare<E>> implements ICustomCompare<GraphNode<E>> {
     private E info;
     private ArrayList<EdgeNode<E>> edges;
+    private boolean visited;
 
     public GraphNode() {
         info=null;
@@ -19,6 +20,7 @@ public class GraphNode<E extends ICustomCompare<E>> implements ICustomCompare<Gr
     public GraphNode(E storeInfo) {
         info = storeInfo;
         edges = new ArrayList<>();
+        visited = false;
     }
 
     public E getInfo() {
@@ -74,6 +76,12 @@ public class GraphNode<E extends ICustomCompare<E>> implements ICustomCompare<Gr
         }
     }
 
+    public void clearTraveled() {
+        for (int i=0; i<edges.size(); i++){
+            edges.get(i).setTraveled(false);
+        }
+    }
+
     @Override
     public int compareBy(GraphNode<E> o) {
         return 0;
@@ -82,5 +90,13 @@ public class GraphNode<E extends ICustomCompare<E>> implements ICustomCompare<Gr
     @Override
     public int compareBy(GraphNode<E> o, String type) {
         return 0;
+    }
+
+    public boolean isVisited() {
+        return visited;
+    }
+
+    public void setVisited(boolean visited) {
+        this.visited = visited;
     }
 }

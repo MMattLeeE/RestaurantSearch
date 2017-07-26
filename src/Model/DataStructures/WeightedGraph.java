@@ -70,15 +70,20 @@ public class WeightedGraph<E extends ICustomCompare<E>> implements IWeightedGrap
 
     @Override
     public void addEdge(E fromVertex, E toVertex, int weight) throws GraphDuplicateException, GraphNullException{
-        //if the fromVertex exists in the graph:
-        if (hasVertex(fromVertex)) {
-            //add edge:
-            vertexes.get(findVertexIndex(fromVertex)).addEdge(toVertex,weight);
-        } else { //if the vertex is not found in the graph:
-            //add the vertex:
-            addVertex(fromVertex);
-            //add the edge
-            vertexes.get(findVertexIndex(fromVertex)).addEdge(toVertex,weight);
+        //if the start vertex and end vertex are the same:
+        if (!(fromVertex.compareBy(toVertex)==0)) {
+            //if the fromVertex exists in the graph:
+            if (hasVertex(fromVertex)) {
+                //add edge:
+                vertexes.get(findVertexIndex(fromVertex)).addEdge(toVertex, weight);
+            } else { //if the vertex is not found in the graph:
+                //add the vertex:
+                addVertex(fromVertex);
+                //add the edge
+                vertexes.get(findVertexIndex(fromVertex)).addEdge(toVertex, weight);
+            }
+        } else {
+            System.out.println("The starting vertex and ending vertex are the same vertex...so no edge is added.");
         }
     }
 
@@ -103,22 +108,51 @@ public class WeightedGraph<E extends ICustomCompare<E>> implements IWeightedGrap
         return output;
     }
 
-    public void showPaths() {
+    public void showGraph() {
         String output="";
 
         for (int i=0; i<vertexes.size(); i++) {
-            output = output + vertexes.get(i).getEdgeCount() + "|" + vertexes.get(i).getInfo().toString() + " => ";
+            output = output + vertexes.get(i).getEdgeCount() + "|" + vertexes.get(i).getInfo().toString() +"|"+ vertexes.get(i).isVisited()+ " => |";
 
             for (int j=0; j<vertexes.get(i).getEdgeCount(); j++){
                 output = output +
                         " TO:" + vertexes.get(i).getEdgeNode(j).getDestinationVertex().toString() +
                         " WT:" + vertexes.get(i).getEdgeNode(j).getWeight() +
-                        " USED?:" + vertexes.get(i).getEdgeNode(j).isTraveled() +
+                        " USED:" + vertexes.get(i).getEdgeNode(j).isTraveled() +
                         " |";
             }
 
             output = output + "\n";
         }
         System.out.println(output);
+    }
+
+    public void clearTraveled() {
+        for (int i=0; i<vertexes.size(); i++) {
+            vertexes.get(i).clearTraveled();
+        }
+    }
+
+    public void clearVisited() {
+        for (int i=0; i<vertexes.size(); i++) {
+            vertexes.get(i).setVisited(false);
+        }
+    }
+    public void visitVertex(E restaurant) {
+        vertexes.get(findVertexIndex(restaurant)).setVisited(true);
+    }
+
+    public boolean isVisited(E restaurant) {
+        return vertexes.get(findVertexIndex(restaurant)).isVisited();
+    }
+
+    public ArrayList<E> getNotVisited() {
+        ArrayList<E> notVisitedArray = new ArrayList<>();
+        for (int i=0; i<vertexes.size(); i++) {
+            if (!vertexes.get(i).isVisited()) {
+                notVisitedArray.add(vertexes.get(i).getInfo());
+            }
+        }
+        return notVisitedArray;
     }
 }

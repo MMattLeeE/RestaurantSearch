@@ -29,6 +29,21 @@ public class WeightedGraphTest {
         testWeightGraph.addVertex(testRestaurant6);
         testWeightGraph.addVertex(testRestaurant7);
     }
+    public void createEdges() throws Exception{
+        testWeightGraph.addEdge(testRestaurant1,testRestaurant2,100);
+        testWeightGraph.addEdge(testRestaurant1,testRestaurant3,100);
+        testWeightGraph.addEdge(testRestaurant1,testRestaurant5,100);
+        testWeightGraph.addEdge(testRestaurant1,testRestaurant6,100);
+        testWeightGraph.addEdge(testRestaurant2,testRestaurant1,100);
+        testWeightGraph.addEdge(testRestaurant3,testRestaurant5,100);
+        testWeightGraph.addEdge(testRestaurant3,testRestaurant4,100);
+        testWeightGraph.addEdge(testRestaurant4,testRestaurant3,100);
+        testWeightGraph.addEdge(testRestaurant5,testRestaurant3,100);
+        testWeightGraph.addEdge(testRestaurant6,testRestaurant5,100);
+        testWeightGraph.addEdge(testRestaurant6,testRestaurant7,100);
+        testWeightGraph.addEdge(testRestaurant7,testRestaurant2,100);
+        testWeightGraph.addEdge(testRestaurant7,testRestaurant4,100);
+    }
 
     @Test
     public void isEmpty() throws Exception {
@@ -83,7 +98,10 @@ public class WeightedGraphTest {
         assertEquals(testWeightGraph.weightIs(testRestaurant1,testRestaurant2)==1200,true);
 
         testWeightGraph.addEdge(testRestaurant1,testRestaurant3,600);
-        testWeightGraph.showPaths();
+        testWeightGraph.showGraph();
+
+        testWeightGraph.addEdge(testRestaurant1,testRestaurant1,777);
+        testWeightGraph.showGraph();
 
     }
 
@@ -95,4 +113,25 @@ public class WeightedGraphTest {
         assertEquals(true,testWeightGraph.weightIs(testRestaurant1,testRestaurant2)==1200);
     }
 
+    @Test
+    public void visitedTests() throws Exception {
+        addTestRestaurants();
+        createEdges();
+
+        testWeightGraph.visitVertex(testRestaurant1);
+        testWeightGraph.visitVertex(testRestaurant5);
+        testWeightGraph.visitVertex(testRestaurant3);
+        testWeightGraph.showGraph();
+
+        assertEquals(true,testWeightGraph.isVisited(testRestaurant1));
+        assertEquals(false,testWeightGraph.isVisited(testRestaurant2));
+
+        System.out.println();
+        for (int i=0; i<testWeightGraph.getNotVisited().size(); i++) {
+            System.out.println(testWeightGraph.getNotVisited().get(i).toString());
+        }
+
+        testWeightGraph.clearVisited();
+        testWeightGraph.showGraph();
+    }
 }
