@@ -6,6 +6,7 @@ package Model.DataStructures;
 public class EdgeNode<E extends ICustomCompare<E>> implements ICustomCompare<EdgeNode<E>> {
     private E destinationVertex;
     private double weight;
+    private boolean traveled;
 
     public EdgeNode() {
 
@@ -13,6 +14,7 @@ public class EdgeNode<E extends ICustomCompare<E>> implements ICustomCompare<Edg
     public EdgeNode(E destinationVertex, double weight) {
         this.destinationVertex = destinationVertex;
         this.weight = weight;
+        this.traveled = false;
     }
 
     public E getDestinationVertex() {
@@ -39,5 +41,13 @@ public class EdgeNode<E extends ICustomCompare<E>> implements ICustomCompare<Edg
     @Override
     public int compareBy(EdgeNode<E> o, String type) {
         return 0;
+    }
+
+    public boolean isTraveled() {
+        return traveled;
+    }
+
+    public void setTraveled(boolean traveled) {
+        this.traveled = traveled;
     }
 }

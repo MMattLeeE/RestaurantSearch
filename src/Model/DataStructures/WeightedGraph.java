@@ -21,18 +21,28 @@ public class WeightedGraph<E extends ICustomCompare<E>> implements IWeightedGrap
         return vertexes.size();
     }
     @Override
-    public void addVertex(E vertex) {
-        GraphNode<E> insertVertex = new GraphNode<>(vertex);
-        vertexes.add(insertVertex);
+    public void addVertex(E vertex) throws GraphDuplicateException, GraphNullException{
+        if (hasVertex(vertex)) {
+            throw new GraphDuplicateException("The vertex you are inserting already exists in the Graph.");
+        } else if(vertex==null) {
+            throw new GraphNullException("Cannot insert null vertex into graph");
+        } else {
+            GraphNode<E> insertVertex = new GraphNode<>(vertex);
+            vertexes.add(insertVertex);
+        }
     }
 
     public ArrayList<GraphNode<E>> getAllVertexes(){
         return vertexes;
     }
 
-    public E getVertexByIndex(int i){
+    public E getVertexByIndex(int i)throws GraphUnderflowException{
+        if (getGraphSize()==0) {
+            throw new GraphUnderflowException("Graph is empty. No vertexes to find");
+        }
         return vertexes.get(i).getInfo();
     }
+
     public int findVertexIndex(E search) {
         for (int i=0;i<vertexes.size();i++) {
             if (search.compareBy(vertexes.get(i).getInfo())==0) {
@@ -59,7 +69,7 @@ public class WeightedGraph<E extends ICustomCompare<E>> implements IWeightedGrap
     }
 
     @Override
-    public void addEdge(E fromVertex, E toVertex, int weight) {
+    public void addEdge(E fromVertex, E toVertex, int weight) throws GraphDuplicateException, GraphNullException{
         //if the fromVertex exists in the graph:
         if (hasVertex(fromVertex)) {
             //add edge:
@@ -95,11 +105,18 @@ public class WeightedGraph<E extends ICustomCompare<E>> implements IWeightedGrap
 
     public void showPaths() {
         String output="";
+
         for (int i=0; i<vertexes.size(); i++) {
             output = output + vertexes.get(i).getEdgeCount() + "|" + vertexes.get(i).getInfo().toString() + " => ";
-            for (int j=0; j<vertexes.get(i).getEdgeCount(); i++){
-                output = output + " weight: " + vertexes.get(i).getEdgeNode(j).getWeight() + " Destination: " + vertexes.get(i).getEdgeNode(j).getDestinationVertex().toString()+"|";
+
+            for (int j=0; j<vertexes.get(i).getEdgeCount(); j++){
+                output = output +
+                        " TO:" + vertexes.get(i).getEdgeNode(j).getDestinationVertex().toString() +
+                        " WT:" + vertexes.get(i).getEdgeNode(j).getWeight() +
+                        " USED?:" + vertexes.get(i).getEdgeNode(j).isTraveled() +
+                        " |";
             }
+
             output = output + "\n";
         }
         System.out.println(output);

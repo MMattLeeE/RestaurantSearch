@@ -5,14 +5,15 @@ package Model.DataStructures;
  */
 public interface IWeightedGraph<E> {
     boolean isEmpty();
-    void addVertex(E vertex);
+
+    void addVertex(E vertex) throws GraphDuplicateException, GraphNullException;
     // Preconditions:   This graph is not full.
     //                  Vertex is not already in this graph.
     //                  Vertex is not null.
     //
     // Adds vertex to this graph.
 
-    void addEdge(E fromVertex, E toVertex, int weight);
+    void addEdge(E fromVertex, E toVertex, int weight) throws GraphDuplicateException, GraphNullException;
     // Adds an edge with the specified weight from fromVertex to toVertex.
 
     double weightIs(E fromVertex, E toVertex);
